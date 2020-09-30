@@ -26,7 +26,7 @@ class Tabs extends Component {
     return (
       <div>
         {this.renderButtons()}
-        {this.props.tabs.length && this.renderContent()}
+        {!!this.props.tabs.length && this.renderContent()}
       </div>
     );
   }
